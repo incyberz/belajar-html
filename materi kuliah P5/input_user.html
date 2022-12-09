@@ -1,0 +1,17 @@
+Nama kamu:
+<input type="" name="" id="nama">
+<button onclick="halo()">Halo</button>
+
+<script type="text/javascript">
+	
+	function halo(){
+		let nama = document.getElementById('nama').value;
+
+		if(nama.length<3){
+			alert('Silahkan masukan nama minimal 3 huruf.');
+			return;
+		}
+
+		alert(`Halo ${nama}! Selamat siang!`);
+	}
+</script>

@@ -1,0 +1,47 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+<p class="paragraf">Ini adalah paragraf 1</p>
+<p class="paragraf">Ini adalah paragraf 2</p>
+<p class="paragraf">Ini adalah paragraf 3</p>
+<p class="paragraf">Ini adalah paragraf 4</p>
+<p class="paragraf">Ini adalah paragraf 5</p>
+<br>
+<button onclick="ubah_semua_jquery()">Ubah semua</button>
+
+
+<script>
+	
+	function ubah_semua_js_native(){
+		let paragraf = document.getElementsByClassName('paragraf');
+
+		paragraf[0].innerHTML = "Paragraf 1 telah diubah";
+		
+		paragraf[1].innerHTML = "Paragraf 2 telah diubah";
+		
+		paragraf[2].innerHTML = "Paragraf 3 telah diubah";
+		
+		paragraf[3].innerHTML = "Paragraf 4 telah diubah";
+		
+		paragraf[4].innerHTML = "Paragraf 5 telah diubah";
+		
+
+		console.log(paragraf);
+	}
+</script>
+
+
+
+
+
+
+<script>
+	$(document).ready(function(){
+		alert('JQUERY sudah terhubung.')
+	})
+
+	function ubah_semua_jquery(){
+		$('.paragraf').text('paragraf telah diubah.');
+	}
+</script>

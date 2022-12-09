@@ -1,0 +1,22 @@
+<style>span { color: blue; cursor: pointer; } </style>
+Nama: <span id="nama_mhs" onclick="ubah_nama()">Ahmad</span> 
+
+<script>
+
+	function ubah_nama(){
+		let nama = document.getElementById('nama_mhs');
+
+		// console.log(nama);
+
+		// nama.innerHTML = "Budi";
+		let nama_baru = prompt('Nama baru:', nama.innerHTML);
+
+		if(!nama_baru || nama_baru.trim().length==0) return;
+
+		nama.innerHTML = nama_baru;
+
+
+		
+	}
+
+</script>

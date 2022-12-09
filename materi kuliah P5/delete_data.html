@@ -1,0 +1,16 @@
+Data penting <button onclick="konfirmasi()">Delete</button> 
+
+<hr>
+<a href="https://google.com" target="_blank" onclick="return confirm('Mau menuju Google?')">Menuju Google</a>
+
+
+<script>
+	
+	function konfirmasi(){
+		let yakin = confirm('Apakah yakin mau hapus?');
+		if(!yakin) return;
+
+		alert('Anda menghapus data')
+	}
+
+</script>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ini Title</title>
+</head>
+<body id="body">
+	<h1>Ini Judul Page</h1>
+	<p>Ini adalah Paragraf</p>
+
+	<table>
+		<tr>
+			<td>No</td>
+		</tr>
+	</table>
+	
+	<button onclick="merahkan()">Merahkan</button>
+
+</body>
+</html>
+
+<script type="text/javascript">
+	
+	function merahkan(){
+		// alert('Anda ingin memberikan latar merah.')
+
+		let body = document.getElementById('body');
+
+		document.getElementById('body').bgColor = "red";
+
+		console.log(body);
+
+	}
+</script>

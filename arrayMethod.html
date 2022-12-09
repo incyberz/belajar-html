@@ -1,0 +1,108 @@
+<style type="text/css">  ol{font-weight: bold}</style>
+<style type="text/css">.z{color: blue;font-size: 16pt}</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ================================================================ -->
+<h1>JAVASCRIPT ARRAY METHOD</h1>
+<!-- ================================================================ -->
+<ol>
+  <li class="z">FILTER</li>
+  <li class="">MAP</li>
+  <li class="">FIND</li>
+  <li class="">INCLUDES</li>
+  <li class="">SOME</li>
+  <li class="">EVERY</li>
+  <li class="">REDUCE</li>
+  <li class="">FOREACH</li>
+</ol>
+<!-- ================================================================ -->
+<!-- BY: IIN SHOLIHIN, M.KOM -->
+
+
+<script type="text/javascript">
+
+  const barangs = [
+  {nama:"Buku Tulis" , harga: 5000},
+  {nama:"Buku Gambar", harga: 3500},
+  {nama:"Mistar"     , harga: 500},
+  {nama:"Tas Sekolah", harga: 35000},
+  {nama:"Pensil"     , harga: 2000},
+  {nama:"Pulpen"     , harga: 3000},
+  {nama:"Penghapus"  , harga: 3500},
+  {nama:"Klip"       , harga: 100},
+  ];
+
+
+  // METODE #1 :: FILTER  ==========================================
+  // const hasilFilter = barangs.filter((i)=>{
+  // return i.harga < 500
+  // })
+  // console.log(hasilFilter)
+
+  // METODE #2 :: MAP :: MAPPING KOLOM =============================
+  // const hasilMapNamaBarang = barangs.map((i)=>{
+  //   return i.nama
+  // })
+
+  // const hasilMapHargaBarang = barangs.map((i)=>{
+  //   return i.harga
+  // })
+
+  // METODE #3 :: FIND :: PENCARIAN SPESIFIK ======================
+  // const hasilCariBarang = barangs.find((i)=>{
+  //   return i.nama === "Pensil"
+  // })
+
+  // METODE #4 :: INCLUDES :: PENCARIAN SPESIFIK ==================
+  // const apakahAdaBarangTertentu = hasilMapNamaBarang.includes("Pensil")
+
+  // METODE #5 :: SOME :: PENCARIAN PADA SEMUA BARANG ============
+  // const adaBarangMurah = barangs.some((i)=>{
+  //   return i.harga < 500;
+  // })
+
+  // const adaBarangMahal = barangs.some((i)=>{
+  //   return i.harga > 5000;
+  // })
+
+  // const adaBarangHargaSedang = barangs.some((i)=>{
+  //   return (i.harga >= 500 && i.harga<=5000);
+  // })
+
+  // METODE #6 :: EVERY :: PENCARIAN PADA SEMUA BARANG ============
+  // const apakahSemuanyaMurah = barangs.every((i)=>{
+  //   return i.harga < 500
+  // })
+
+  // METODE #7 :: REDUCE :: TOTALKAN! =============================
+  // let potonganHarga = 600;
+  // const totalHarga = barangs.reduce((currentTotalHarga, i)=>{
+  //   return i.harga + currentTotalHarga
+  // }, -potonganHarga)
+
+  // METODE #8 :: FOREACH :: PROSES UNTUK TIAP ITEM ===============
+  // let nomor = 0;
+  // barangs.forEach((i)=>{
+    // nomor++;
+    //console.log("Barang ke-"+nomor+": "+i.nama+", harga Rp "+i.harga)
+  // })
+
+</script>
