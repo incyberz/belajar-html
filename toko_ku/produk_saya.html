@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Produk Saya</title>
+</head>
+<body>
+
+	<h1>Produk Toko Badjoe</h1>
+
+	
+
+
+	<table cellpadding="5px" width="100%">
+		<tr>
+			<td>
+				<a href="home.html">Back to Home</a>
+			</td>
+			<td align="right">
+				<a href="tambah_produk.html">Tambah Produk</a>
+			</td>
+		</tr>
+	</table>
+	
+
+	<table border="1" cellpadding="5px" cellspacing="0" width="100%">
+		<tr bgcolor="#efe">
+			<td>No</td>
+			<td>Nama Produk</td>
+			<td>Spesifikasi</td>
+			<td>Aksi</td>
+		</tr>
+
+
+		<tr>
+			<td>1</td>
+			<td>
+				Jaket Kulit Hitam
+				<div>
+					<img src="img/jaket-kulit-hitam.jpg" width="100px">
+				</div>
+			</td>
+			<td>
+				Bahan:
+				<ul>
+					<li>Kulit 90%</li>
+					<li>Polyester 5%</li>
+					<li>Cotton 5%</li>
+				</ul>
+			</td>
+
+			<td>
+				<button class="tombol" onclick="aksi_keranjang()" >Keranjang</button> | 
+				<button class="tombol" onclick="aksi_beli()">Beli</button>
+			</td>
+		</tr>
+
+
+		<tr>
+			<td>2</td>
+			<td>
+				Kaos Polos
+				<div>
+					<img src="img/kaos-polos.jpg" width="100px">
+				</div>
+			</td>
+			<td>
+				Bahan: 100% cotton
+			</td>
+
+			<td>
+				<button class="tombol" onclick="aksi_keranjang()" >Keranjang</button> | 
+				<button class="tombol" onclick="aksi_beli()">Beli</button>
+			</td>
+		</tr>
+
+
+
+		<tr>
+			<td>3</td>
+			<td>
+				jas Hujan
+				<div>
+					<img src="img/jas-hujan.jpg" width="100px">
+				</div>
+			</td>
+			<td>
+				Bahan:
+				<ul>
+					<li>Polyester 95%</li>
+					<li>Lain-lain 5%</li>
+				</ul>
+			</td>
+
+			<td>
+				<button class="tombol" onclick="aksi_keranjang()" >Keranjang</button> | 
+				<button class="tombol" onclick="aksi_beli()">Beli</button>
+			</td>
+		</tr>
+
+
+
+	</table>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	
+	// alert("Halo World Javascript!");
+
+	function aksi_keranjang(){
+		alert('Anda menekan tombol Keranjang')
+	}
+
+	function aksi_beli(){
+		alert("Anda menekan tombol Beli")
+	}
+
+
+	// var x = document.getElementById('btn_beli2');
+	// x.onclick = function(){
+	// 	alert('Anda menekan elemen dg id btn_beli2');
+	// }
+
+
+	// var y = document.getElementById('btn_beli1');
+	// y.onclick = function(){
+	// 	alert('Anda menekan elemen dg id: btn_beli1')
+	// }
+
+	// var z = document.getElementsByClassName('tombol');
+
+	// console.log(z);
+
+	// z[0].onclick = function(){
+	// 	alert('Anda menekan sebuah tombol index 0.')
+	// }	
+
+
+
+</script>

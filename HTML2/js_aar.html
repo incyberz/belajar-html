@@ -1,0 +1,37 @@
+<h1>JS Array</h1>
+<script type="text/javascript">
+
+
+	// const nama_hari = ["Ahad", "Senin","Selasa", "Rabu", "Kamis","Jumat","Sabtu"];
+
+	// for (var i = 0; i < nama_hari.length; i++) {
+	// 	alert("Hari ke-"+(i+1)+" adalah hari "+nama_hari[i]);
+	// }
+
+	// let jumlah_hari = nama_hari.length;
+
+	// alert("Jumlah hari dalam seminggu sebanyak "+jumlah_hari+" hari");
+
+	// nama_hari.forEach(sebutkanHari);
+
+	// function sebutkanHari(item, index){
+	// 	alert(item);
+	// }
+
+	// let jadwal[0] = "Malmingan";
+	// let jadwal[1] = "Liburan";
+
+
+	const jadwal = {
+		senin:"Mulai Kerja", 
+		selasa:"Rapat", 
+		rabu:"Laporan",
+		kerjaan: function() {
+			return this.senin + " lalu " + this.selasa + " hingga buat " + this.rabu;
+		}
+	};
+
+	alert(jadwal.kerjaan());
+
+
+</script>

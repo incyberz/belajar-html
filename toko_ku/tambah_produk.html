@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tambah Produk</title>
+
+	<link rel="stylesheet" type="text/css" href="toko_ku.css">
+
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+
+</head>
+<body>
+
+	<div class="container">
+		
+
+		<h1>Tambah Produk</h1>
+
+		<form>
+
+			<div class="form-group">
+				<label>Nama Produk</label>
+				<input type="text" class="form-control">
+			</div>
+
+			<div class="form-group">
+				<label>Jenis Produk</label>
+				<select class="form-control">
+					<option>Jaket</option>
+					<option>Kaos</option>
+					<option>Lainnya</option>
+				</select>
+			</div>
+
+			<div class="form-group">
+				Untuk:
+				<div>
+					<label>
+						<input type="radio" name="size_untuk"> Dewasa
+					</label>
+				</div>
+
+				<div>
+					<label>
+						<input type="radio" name="size_untuk"> Remaja
+					</label>
+				</div>
+
+
+				<div>
+					<label>
+						<input type="radio" name="size_untuk"> Anak-anak
+					</label>
+				</div>
+
+			</div>
+
+			<div class="form-group checkbox">
+				<input type="checkbox" name=""> Stok Tersedia
+			</div>
+
+			<div class="form-group">
+				Bahan:
+				<div class="checkbox">
+					<input type="checkbox" name="" > Cotton
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" name=""> Polyester
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" name=""> Plastik
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" name=""> Lainnya
+				</div>
+			</div>
+
+			<div class="form-group">
+				<button type="submit" class="btn btn-primary btn-sm">Submit</button> 
+				<button type="reset" class="btn btn-warning btn-sm">Clear</button>
+			</div>
+			
+		</form>
+
+	</div>
+
+</body>
+</html>
